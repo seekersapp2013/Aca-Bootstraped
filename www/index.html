@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>ACA Portal NG</title>
+  
+    
+</head>
+
+<body>
+    
+    {{> header}}
+
+        <main>
+
+            {{> hero}}   
+
+            <!--Chat Widgets Starts Here-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/608ce49462662a09efc3da99/1f4j5ppuk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+
+    <!--End of Tawk.to Script-->
+
+
+
+            <!--Chat Widgets Ends Here-->
+<!--            
+        <div class="chat-bot">
+            <div class="dropdown" id="chat">
+                <div class="content">
+                    <p>Fatima Saidu from CDD</p>
+                    <h6>Welcome to CDD</h6>
+                    <input type="text" name="" id="" placeholder="How can we help you ... ">
+                </div>
+                <div class="footer">
+                    <button class="btn light-green">Call Us</button>
+                    <button class="btn light-green">Email Us</button>
+                </div>
+            </div>
+            <div class="chat-btn flex-center rounded btn green" data-action="dropdown" data-target="chat">
+                <i class="icon-chat"></i>
+            </div>
+        </div> -->
+        {{#section 2 label="Our Partners" multiple=true}}
+
+          <div class="section">
+            <div class="heading pad-2">
+                <h3>{{partnerssectiontitle}}</h3>
+            </div>
+            <div class="col-2">
+        
+                <div class="wid-45 flex-center">
+                    <img src="{{partnersimage}}" class="fit" alt="Our Partners are key">
+                </div>
+                <div class="wid-36 pad-2">
+                    <h3>{{partnerstitle}}</h3>
+                    <p class="txt-blue">{{partnersdescription}} </p>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        {{/section}}
+        
+        {{#section 3 label="Our Partners2" multiple=true}}
+        <div>
+
+          <div class="section bg-dim">
+            <div class="col-2 rev">
+                <div class="wid-45 pad-2">
+                    <h3>{{partnerstitle}}</h3>
+                    <p class="txt-blue">{{partnersdescription}}</p>
+                    <div class="cta">
+                        <a href="{{ctalink}}">      <button class="btn green">{{ctaname}}</button></a>
+                    </div>
+                </div>
+                <div class="wid-36 flex-center">
+                    <img src="{{partnersimage}}" class="fit" alt="Our Partners are key">
+                </div>
+            </div>
+        </div>
+       
+        </div>
+        {{/section}}
+
+        {{#section 4 label="Our Partners3" multiple=true sortable=true}}
+         <div class="section">
+            <div class="col-2">
+                <div class="wid-45 flex-center">
+                    <img src="{{partnersimage}}" class="fit" alt="Our Partners are key">
+                </div>
+                <div class="wid-36 pad-2">
+                    <h2><i class="fa fa-check-circle" style="color: green;"></i> {{heading1}}</h2>
+                    <!-- <i class="fa fa-check-circle" style="color: green; margin-right: 0.2em" aria-hidden="true"></i> -->
+
+                    <h2><i class="fa fa-check-circle" style="color: green;"></i> {{heading2}}</h2>
+                    <h2><i class="fa fa-check-circle" style="color: green;"></i> {{heading3}}</h2>
+                    <p class="txt-black">{{partnersdescription }}</p>
+                    <div class="cta">
+                        <a href="{{ctalink}}">    <button class="btn teal">{{ctaname}}</button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section auto-height bg-teal">
+            <h1 class="txt-white txt-center">{{header4}}</h1>
+            <hr class="divider">
+            <div class="partners">
+                {{/section}}
+                
+        {{#section 5 label="Partners List" multiple=true}}
+                <div class="card it">
+                    <div class="img">
+                        <img src="{{partnerlogo}}" alt="">
+                    </div>
+                    <div class="text txt-center">
+                        <h4>{{Partneracronym}}</h4>
+                        <p class="txt-blue">{{partnername}}</p>
+                        <a href="{{ctalink}}">    <button class="btn small green">{{ctaname}}</button></a>
+                    </div>
+                
+                </div>
+                {{/section}}  </div>
+            </div>
+        </div>
+
+        {{#section 6 label="Event" multiple=true}}
+        <div class="section bg-light-blue">
+            <div class="col-2 rev">
+                <div class="wid-45 pad-2">
+                    <h3>{{eventstitle}}</h3>
+                    <p class="txt-black">{{eventsdescription }}</p>
+                    <div class="cta">
+                        <a href="{{ctalink}}">    <button class="btn teal">{{ctaname}}</button></a>
+                    </div>
+                </div>
+                <div class="wid-36 flex-center">
+                    <img src="{{eventsimage}}" class="fit" alt="Get Updates on Events & Projects">
+                </div>
+            </div>
+        </div>
+
+{{/section}}
+{{#section 7 label="Upload Section" multiple=true}}
+        <div class="section auto-height start-uploading">
+            <div class="col-2">
+                <div class="wid-36 pad-4">
+                    <h4 class="txt-dark-blue">{{sectiontitle}}</h4>
+                    <p class="txt-blue">{{sectiondescription }}</p>
+                </div>
+                <div class="cta wid-45 pad-4">
+                    <a href="{{ctalink}}">  <button class="btn green">{{ctaname}}</button></a>
+            
+              
+                </div>
+            </div>
+        </div>
+
+{{/section}}
+    </main>
+    {{> footer}}
+
+</body>
+
+</html>
